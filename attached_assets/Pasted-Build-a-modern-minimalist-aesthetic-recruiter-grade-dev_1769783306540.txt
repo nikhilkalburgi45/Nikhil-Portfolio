@@ -1,0 +1,158 @@
+Build a modern, minimalist, aesthetic, recruiter-grade developer portfolio using ONLY frontend technologies.
+
+Strict constraints:
+- Frontend only
+- No backend
+- No database
+- No server code
+- No fake data
+- No lorem ipsum
+- No fake testimonials
+- No fake metrics
+- No placeholder links
+- Real content only
+
+Stack:
+- React + Vite
+- Tailwind CSS
+- Framer Motion animations
+- Responsive mobile-first design
+- Clean component architecture
+- Sticky navbar
+- Smooth scroll navigation
+- Dark/light theme toggle
+- Subtle motion effects (not flashy)
+- Neutral color palette + one accent color
+- Card-based layout with rounded corners and soft shadows
+- Monospace headings + clean sans-serif body font
+- Optimized spacing and readability
+- Lighthouse-friendly performance
+
+Portfolio Owner:
+
+Name: Nikhil Kalburgi
+Role: Full Stack & DevOps Engineer
+Location: India
+GitHub: https://github.com/nikhilkalburgi45
+
+Hero Section:
+- Large name heading
+- Animated role text: “Full Stack & DevOps Engineer”
+- Short technical positioning line:
+  “I build scalable applications, microservices systems, and production-grade cloud deployments.”
+- Buttons:
+  View Projects
+  GitHub Profile
+
+About Section:
+Write a concise, technical summary focused on:
+- full stack engineering
+- DevOps pipelines
+- microservices architecture
+- containerization
+- cloud deployment
+- system design mindset
+No motivational language. Keep it sharp and professional.
+
+Skills Section — categorized grid with icons:
+
+Frontend:
+React, JavaScript, Tailwind CSS, HTML, CSS
+
+Backend:
+Java, Spring Boot, Node.js
+
+DevOps & Cloud:
+Docker, Kubernetes, AWS, CI/CD, GitHub Actions, EKS
+
+Databases:
+MySQL, MongoDB
+
+Tools:
+Git, GitHub, Linux, Vercel
+
+Projects Section — animated modern cards with tech tags, architecture focus, and correct links:
+
+Project 1:
+Title: Car Rental Platform
+Live Demo Link: https://drive-share-rent.vercel.app/
+Button label: Live Demo
+Description:
+Responsive vehicle rental platform with booking workflow and modular frontend architecture.
+Tags:
+React, Tailwind, Component Design, UI Architecture
+
+Project 2:
+Title: Microservice-Based Airline Management System
+GitHub Link: https://github.com/nikhilkalburgi45/Airline-Management-System
+Button label: GitHub Repo
+Description:
+Distributed airline system designed using microservice architecture and service separation principles.
+Tags:
+Microservices, Java, Spring Boot, System Design
+
+Project 3:
+Title: DocRAG – Intelligent Document Q&A Chatbot
+GitHub Link: https://github.com/Arraj2611/doc_RAG
+Button label: GitHub Repo
+Description:
+Retrieval-augmented generation chatbot using semantic document retrieval and context injection pipeline.
+Tags:
+RAG, NLP, AI Systems
+
+Project 4:
+Title: Zomato Clone – DevSecOps Case Study
+GitHub Link: https://github.com/nikhilkalburgi45/Zomato-Devops
+Button label: GitHub Repo
+Description:
+DevSecOps pipeline case study with CI/CD, container security scanning, and deployment automation.
+Tags:
+DevSecOps, CI/CD, Containers
+
+Project 5:
+Title: Production-Grade DevOps Deployment on AWS EKS
+NO LINK BUTTON
+Show badge: Private Project
+Description:
+Enterprise-style Kubernetes deployment patterns on AWS EKS with production infrastructure design.
+Tags:
+AWS, Kubernetes, EKS, Infra
+
+Experience Section:
+Timeline layout titled:
+“Hands-on Engineering & DevOps Project Experience”
+Describe practical work across:
+- microservices builds
+- CI/CD pipelines
+- container deployments
+- cloud infra labs
+
+Education Section:
+Simple clean card layout with placeholder degree block (no fake institution names).
+
+GitHub Section:
+Show GitHub profile card with repo focus and CTA button.
+
+Contact Section:
+Frontend-only contact form UI (no submit backend):
+Fields:
+Name
+Email
+Message
+
+Footer:
+GitHub link
+Clean copyright line
+
+Design Quality Rules:
+- No clutter
+- Generous whitespace
+- Visual hierarchy strong
+- Recruiter can scan in 60 seconds
+- Every project emphasizes architecture and tech depth
+- Avoid buzzword stuffing
+- Avoid generic claims
+- Make it look like a serious engineer portfolio, not a template
+
+Deliver:
+Complete working React + Tailwind project with all components and folder structure ready to run.
