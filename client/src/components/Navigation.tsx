@@ -10,7 +10,6 @@ const navItems = [
   { name: "Skills", to: "skills" },
   { name: "Projects", to: "projects" },
   { name: "Experience", to: "experience" },
-  { name: "Contact", to: "contact" },
 ];
 
 export function Navigation() {
@@ -29,10 +28,10 @@ export function Navigation() {
     <motion.header
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${
         scrolled
-          ? "glass-panel py-3"
-          : "bg-transparent py-5"
+          ? "bg-background/80 backdrop-blur-md border-border py-3"
+          : "bg-transparent border-transparent py-5"
       }`}
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">

@@ -102,10 +102,9 @@ export default function Home() {
                 variant="outline" 
                 size="lg" 
                 className="text-lg px-8 py-6 rounded-full"
-                onClick={() => window.open('https://github.com/nikhilkalburgi45', '_blank')}
+                onClick={() => window.open('https://drive.google.com/file/d/1TXza6hkKkbcRu-rOWP_rDsyMt3vKGx5_/view?usp=sharing', '_blank')}
               >
-                <Github className="mr-2 w-5 h-5" />
-                GitHub Profile
+                Download Resume
               </Button>
             </div>
           </motion.div>
@@ -224,6 +223,7 @@ export default function Home() {
               tags={['Microservices', 'Java', 'Spring Boot', 'System Design']}
               link="https://github.com/nikhilkalburgi45/Airline-Management-System"
               delay={0.1}
+              isGithub={true}
             />
             <ProjectCard 
               title="DocRAG Chatbot"
@@ -231,6 +231,7 @@ export default function Home() {
               tags={['RAG', 'NLP', 'AI Systems', 'Python']}
               link="https://github.com/Arraj2611/doc_RAG"
               delay={0.2}
+              isGithub={true}
             />
             <ProjectCard 
               title="Zomato DevSecOps"
@@ -238,6 +239,7 @@ export default function Home() {
               tags={['DevSecOps', 'CI/CD', 'Docker', 'Security']}
               link="https://github.com/nikhilkalburgi45/Zomato-Devops"
               delay={0.3}
+              isGithub={true}
             />
             <ProjectCard 
               title="Production AWS EKS"
@@ -303,97 +305,41 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="py-24">
-        <div className="container mx-auto px-4 md:px-6 max-w-4xl">
-          <SectionHeading title="Get In Touch" subtitle="Have a project in mind or just want to say hi?" align="center" />
-          
-          <div className="bg-card border border-border rounded-2xl p-8 md:p-12 shadow-sm">
-            <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <FormField
-                    control={form.control}
-                    name="name"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Name</FormLabel>
-                        <FormControl>
-                          <Input placeholder="John Doe" {...field} className="h-12 bg-background/50" />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                  <FormField
-                    control={form.control}
-                    name="email"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Email</FormLabel>
-                        <FormControl>
-                          <Input placeholder="john@example.com" {...field} className="h-12 bg-background/50" />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                </div>
-                
-                <FormField
-                  control={form.control}
-                  name="message"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Message</FormLabel>
-                      <FormControl>
-                        <Textarea 
-                          placeholder="Tell me about your project..." 
-                          className="min-h-[150px] bg-background/50 resize-none" 
-                          {...field} 
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                
-                <Button 
-                  type="submit" 
-                  size="lg" 
-                  className="w-full h-12 font-medium text-lg"
-                  disabled={submitContact.isPending}
-                >
-                  {submitContact.isPending ? "Sending..." : "Send Message"}
-                </Button>
-              </form>
-            </Form>
-          </div>
-        </div>
-      </section>
-
       {/* Footer */}
-      <footer className="py-8 border-t border-border bg-secondary/20">
-        <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="text-sm text-muted-foreground">
-            © 2024 Nikhil Kalburgi. All rights reserved.
+      <footer className="py-12 border-t border-border bg-secondary/20">
+        <div className="container mx-auto px-4 text-center">
+          <div className="mb-6">
+            <h3 className="text-xl font-bold font-mono text-primary mb-2">Nikhil Kalburgi</h3>
+            <p className="text-muted-foreground">Full Stack & DevOps Engineer</p>
           </div>
           
-          <div className="flex items-center gap-6">
+          <div className="flex justify-center items-center gap-6 mb-8">
             <a 
               href="https://github.com/nikhilkalburgi45" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors"
+              className="p-2 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all duration-300"
             >
               <Github className="w-5 h-5" />
             </a>
             <a 
-              href="mailto:contact@example.com" 
-              className="text-muted-foreground hover:text-primary transition-colors"
+              href="https://www.linkedin.com/in/nikhilkalburgi" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="p-2 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all duration-300"
+            >
+              <Linkedin className="w-5 h-5" />
+            </a>
+            <a 
+              href="mailto:nikhilkalburgi45@gmail.com" 
+              className="p-2 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all duration-300"
             >
               <Mail className="w-5 h-5" />
             </a>
+          </div>
+
+          <div className="text-sm text-muted-foreground border-t border-border/50 pt-8">
+            © 2024 Nikhil Kalburgi. Designed & Built with a focus on System Architecture.
           </div>
         </div>
       </footer>

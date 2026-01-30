@@ -9,10 +9,11 @@ interface ProjectCardProps {
   tags: string[];
   link?: string;
   isPrivate?: boolean;
+  isGithub?: boolean;
   delay?: number;
 }
 
-export function ProjectCard({ title, description, tags, link, isPrivate = false, delay = 0 }: ProjectCardProps) {
+export function ProjectCard({ title, description, tags, link, isPrivate = false, isGithub = false, delay = 0 }: ProjectCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -39,7 +40,7 @@ export function ProjectCard({ title, description, tags, link, isPrivate = false,
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
-                <ExternalLink className="w-5 h-5" />
+                {isGithub ? <Github className="w-5 h-5" /> : <ExternalLink className="w-5 h-5" />}
               </a>
             )
           )}
@@ -69,12 +70,17 @@ export function ProjectCard({ title, description, tags, link, isPrivate = false,
                 className="w-full gap-2 font-mono"
                 onClick={() => window.open(link, '_blank')}
               >
-                <ExternalLink className="w-4 h-4" /> View Live
+                {isGithub ? (
+                  <>
+                    <Github className="w-4 h-4" /> GitHub Repo
+                  </>
+                ) : (
+                  <>
+                    <ExternalLink className="w-4 h-4" /> View Live
+                  </>
+                )}
               </Button>
             )}
-            
-            {/* If there was a distinct github link, we'd add it here, 
-                for now utilizing the main link as per requirements or generic placeholder */}
           </div>
         </div>
       </div>
