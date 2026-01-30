@@ -45,7 +45,7 @@ export function Navigation() {
           <div className="bg-primary/10 p-2 rounded-lg group-hover:bg-primary/20 transition-colors">
             <Terminal className="h-5 w-5 text-primary" />
           </div>
-          <span className="font-mono font-bold text-lg tracking-tight">NK.dev</span>
+          <span className="font-mono font-bold text-lg tracking-tight text-primary">Nikhil</span>
         </ScrollLink>
 
         {/* Desktop Nav */}
