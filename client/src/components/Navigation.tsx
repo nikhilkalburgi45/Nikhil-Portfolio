@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Terminal } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
 import { Button } from "@/components/ui/button";
 
@@ -41,9 +41,6 @@ export function Navigation() {
           duration={500}
           className="cursor-pointer flex items-center gap-2 group"
         >
-          <div className="bg-primary/10 p-2 rounded-lg group-hover:bg-primary/20 transition-colors">
-            <Terminal className="h-5 w-5 text-primary" />
-          </div>
           <span className="font-mono font-bold text-lg tracking-tight text-primary">Nikhil</span>
         </ScrollLink>
 

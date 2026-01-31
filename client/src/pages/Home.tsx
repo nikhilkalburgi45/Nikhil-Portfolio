@@ -27,7 +27,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { insertContactSchema, type InsertContact } from "@shared/schema";
+import { insertContactSchema, type InsertContact } from "@/lib/contact-schema";
 import { useSubmitContact } from "@/hooks/use-contact";
 
 export default function Home() {
@@ -79,7 +79,7 @@ export default function Home() {
             </motion.div>
             
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6">
-              Hello, I'm <span className="text-primary">Nikhil Kalburgi</span>
+              Hello, I'm <span className="text-primary">Nikhil</span>
             </h1>
             
             <h2 className="text-2xl md:text-3xl font-mono text-muted-foreground mb-8 h-12">

@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
 export function ThemeToggle() {
-  const [theme, setTheme] = useState<"light" | "dark">("light");
+  const [theme, setTheme] = useState<"light" | "dark">("dark");
 
   useEffect(() => {
     const isDark = document.documentElement.classList.contains("dark");

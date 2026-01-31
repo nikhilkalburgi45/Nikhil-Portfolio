@@ -1,7 +1,5 @@
 import { useMutation } from "@tanstack/react-query";
-import { api } from "@shared/routes";
-import { type InsertContact } from "@shared/schema";
-import { apiRequest } from "@/lib/queryClient";
+import { type InsertContact } from "@/lib/contact-schema";
 import { useToast } from "@/hooks/use-toast";
 
 export function useSubmitContact() {
@@ -9,12 +7,8 @@ export function useSubmitContact() {
   
   return useMutation({
     mutationFn: async (data: InsertContact) => {
-      // In a real app with backend, this would be:
-      // const res = await apiRequest("POST", api.contact.submit.path, data);
-      // return res.json();
-      
-      // For this demo/portfolio, we'll simulate a success response
-      console.log("Submitting contact form:", data);
+      // Frontend-only: simulate success (no backend)
+      console.log("Contact form submitted:", data);
       await new Promise(resolve => setTimeout(resolve, 1000));
       return { success: true };
     },
