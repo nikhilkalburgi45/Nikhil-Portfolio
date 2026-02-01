@@ -27,7 +27,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { insertContactSchema, type InsertContact } from "@/lib/contact-schema";
+import { insertContactSchema, type InsertContact } from "@shared/schema";
 import { useSubmitContact } from "@/hooks/use-contact";
 
 export default function Home() {
@@ -79,7 +79,7 @@ export default function Home() {
             </motion.div>
             
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6">
-              Hello, I'm <span className="text-primary">Nikhil</span>
+              Hello, I'm <span className="text-primary">Nikhil Kalburgi</span>
             </h1>
             
             <h2 className="text-2xl md:text-3xl font-mono text-muted-foreground mb-8 h-12">
@@ -178,7 +178,7 @@ export default function Home() {
             />
             <SkillCard 
               title="Backend Development" 
-              skills={['Java', 'Spring Boot', 'Node.js', 'REST APIs']}
+              skills={['Node.js', 'REST APIs','Express.Js','JWT']}
               icon={<Server className="w-6 h-6" />}
               delay={0.1}
             />
@@ -213,14 +213,14 @@ export default function Home() {
             <ProjectCard 
               title="Car Rental Platform"
               description="Responsive vehicle rental platform with booking workflow and modular frontend architecture."
-              tags={['React', 'Tailwind', 'UI Architecture']}
+              tags={['React', 'Node', 'UI Architecture']}
               link="https://drive-share-rent.vercel.app/"
               delay={0}
             />
             <ProjectCard 
               title="Airline Management System"
               description="Distributed airline system designed using microservice architecture and service separation principles."
-              tags={['Microservices', 'Java', 'Spring Boot', 'System Design']}
+              tags={['Microservices','Node.Js', 'System Design','Rabbit-MQ']}
               link="https://github.com/nikhilkalburgi45/Airline-Management-System"
               delay={0.1}
               isGithub={true}
@@ -298,7 +298,7 @@ export default function Home() {
           <Button 
             size="lg" 
             className="rounded-full px-8"
-            onClick={() => window.open('https://github.com/nikhilkalburgi45', '_blank')}
+            onClick={() => window.open('https://www.linkedin.com/in/nikhil-kalburgi/', '_blank')}
           >
             Visit GitHub Profile
           </Button>
@@ -339,7 +339,7 @@ export default function Home() {
           </div>
 
           <div className="text-sm text-muted-foreground border-t border-border/50 pt-8">
-            © 2024 Nikhil Kalburgi. Designed & Built with a focus on System Architecture.
+            © 2025 Nikhil Kalburgi. Designed & Built with a focus on System Architecture.
           </div>
         </div>
       </footer>
