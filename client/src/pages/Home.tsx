@@ -27,7 +27,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { insertContactSchema, type InsertContact } from "@shared/schema";
+import { insertContactSchema, type InsertContact } from "@/lib/contact-schema";
 import { useSubmitContact } from "@/hooks/use-contact";
 
 export default function Home() {
